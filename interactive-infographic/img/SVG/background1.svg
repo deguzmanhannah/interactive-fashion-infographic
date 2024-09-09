@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1093.51 736.43">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.65;
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: #2f3861;
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-6 {
+        fill: #001c5b;
+      }
+
+      .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-8 {
+        fill: #243160;
+      }
+
+      .cls-9 {
+        fill: #172a5e;
+      }
+
+      .cls-10 {
+        fill: #510b0b;
+      }
+
+      .cls-11 {
+        fill: #e5725d;
+      }
+
+      .cls-12 {
+        fill: #dd675b;
+      }
+
+      .cls-13 {
+        fill: #db5953;
+      }
+    </style>
+    <linearGradient id="linear-gradient" y1="349.21" x2="1093.51" y2="349.21" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f1f1f1"/>
+      <stop offset="1" stop-color="#172a5e"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="123.65" y1="373.4" x2="172.43" y2="373.4" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#001c5b"/>
+      <stop offset="1" stop-color="#2f3861"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="122.68" y1="364.99" x2="372.88" y2="364.99" gradientUnits="userSpaceOnUse">
+      <stop offset="0.3" stop-color="#001c5b"/>
+      <stop offset="1" stop-color="#2f3861"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Screen_1" data-name="Screen 1">
+      <g>
+        <path class="cls-1" d="M1042.42,698.43S860.16,520.58,748.27,537.07,480.73,684.81,396.15,566,256.63,420.09,201.92,432.69s-183.29-91-170.23-137.82S-98.18,4.35,133.94,10.26,601.58-32.28,590,41.19,571.29,219.4,627.5,219.26s133.7-56.16,175.16-15.48c71.67,70.31,170.52-1.52,191,3.73,112.83,29,112.6,56.12,83.6,164.35S1042.42,698.43,1042.42,698.43Z"/>
+        <g id="factory">
+          <path class="cls-2" d="M172.43,388.45V335.58c-27.08,8.43-48.78,0-48.78,0l3.09,75.65"/>
+          <g id="tube">
+            <rect class="cls-3" x="116.02" y="329.29" width="59.73" height="13.64"/>
+            <ellipse class="cls-3" cx="116.02" cy="336.11" rx="5.25" ry="6.82"/>
+            <ellipse class="cls-3" cx="175.75" cy="336.11" rx="5.25" ry="6.82"/>
+          </g>
+          <polygon class="cls-4" points="372.88 427.43 229.87 433.53 122.69 433.53 127.27 407.6 191.5 375.38 253.26 346.95 367.38 296.45 372.88 427.43"/>
+          <polygon class="cls-3" points="369.84 353.95 391.86 335.85 391.86 429.19 372.05 430.15 369.84 353.95"/>
+          <rect class="cls-3" x="122.68" y="425.76" width="279.55" height="308.68"/>
+          <line class="cls-5" x1="782.95" y1="720.93" x2="426.43" y2="720.93"/>
+          <polygon class="cls-3" points="60.43 274.09 90.3 274.09 80.17 734.43 32.58 735.43 60.43 274.09"/>
+          <rect class="cls-6" x="179.14" y="663.57" width="23.89" height="69.7"/>
+          <ellipse class="cls-6" cx="191.09" cy="668.21" rx="12.22" ry="20.48"/>
+          <rect class="cls-6" x="215.62" y="663.57" width="23.89" height="69.7"/>
+          <ellipse class="cls-6" cx="227.56" cy="668.21" rx="12.22" ry="20.48"/>
+          <rect class="cls-7" x="146.68" y="514.03" width="48.78" height="22.97"/>
+          <rect class="cls-7" x="235.82" y="514.03" width="48.78" height="22.97"/>
+          <rect class="cls-7" x="329.46" y="514.03" width="48.78" height="22.97"/>
+          <polyline class="cls-8" points="120.35 264.5 141.31 735.43 32.58 735.43 60.09 264.5"/>
+          <rect class="cls-6" x="142.75" y="661.76" width="23.89" height="69.7"/>
+          <ellipse class="cls-6" cx="154.69" cy="666.4" rx="12.22" ry="20.48"/>
+          <g id="tube-2" data-name="tube">
+            <rect class="cls-3" x="60.43" y="260.45" width="59.73" height="13.64"/>
+            <ellipse class="cls-3" cx="60.43" cy="267.27" rx="5.25" ry="6.82"/>
+            <ellipse class="cls-3" cx="120.16" cy="267.27" rx="5.25" ry="6.82"/>
+          </g>
+          <g id="tube-3" data-name="tube">
+            <rect class="cls-8" x="410.62" y="675.18" width="381.01" height="60.32"/>
+            <ellipse class="cls-8" cx="410.62" cy="705.35" rx="33.52" ry="30.16"/>
+            <ellipse class="cls-8" cx="791.63" cy="705.35" rx="23.24" ry="30.16"/>
+          </g>
+          <circle class="cls-5" cx="432.95" cy="703.03" r="13.28"/>
+          <circle class="cls-5" cx="775.58" cy="703.03" r="13.28"/>
+          <circle class="cls-5" cx="432.95" cy="703.03" r="6.64"/>
+          <circle class="cls-5" cx="775.58" cy="703.03" r="6.64"/>
+          <rect class="cls-5" x="412.34" y="683.48" width="382.8" height="39.1" rx="12.87"/>
+          <rect class="cls-9" x="133.71" y="566.68" width="268.03" height="169.76"/>
+          <path class="cls-7" d="M59,283.31s19.27,8.92,62.2,0l.88,19.7s-36.38,9.19-64.23,0Z"/>
+        </g>
+        <g id="pink_factory" data-name="pink factory">
+          <rect class="cls-10" x="895.35" y="440.9" width="14.1" height="59.63"/>
+          <rect class="cls-10" x="895.35" y="440.9" width="84.56" height="14.54"/>
+          <rect class="cls-10" x="874.33" y="420.79" width="14.1" height="59.63"/>
+          <ellipse class="cls-11" cx="906.87" cy="511.87" rx="86.76" ry="46.61"/>
+          <rect class="cls-12" x="819.85" y="510.46" width="174.18" height="224.97" rx="7.26"/>
+          <rect class="cls-10" x="838.89" y="551.42" width="23.04" height="37.25"/>
+          <ellipse class="cls-10" cx="850.45" cy="552.82" rx="11.56" ry="9.82"/>
+          <rect class="cls-10" x="895.38" y="551.42" width="23.04" height="37.25"/>
+          <ellipse class="cls-10" cx="906.94" cy="552.82" rx="11.56" ry="9.82"/>
+          <rect class="cls-10" x="947.33" y="551.42" width="23.04" height="37.25"/>
+          <ellipse class="cls-10" cx="958.89" cy="552.82" rx="11.56" ry="9.82"/>
+          <rect class="cls-10" x="947.33" y="608.53" width="23.04" height="37.25"/>
+          <ellipse class="cls-10" cx="958.89" cy="609.93" rx="11.56" ry="9.82"/>
+          <rect class="cls-10" x="895.35" y="608.53" width="23.04" height="37.25"/>
+          <ellipse class="cls-10" cx="906.9" cy="609.93" rx="11.56" ry="9.82"/>
+          <rect class="cls-10" x="838.82" y="608.53" width="23.04" height="37.25"/>
+          <ellipse class="cls-10" cx="850.38" cy="609.93" rx="11.56" ry="9.82"/>
+          <rect class="cls-13" x="820.04" y="676.45" width="173.79" height="58.98"/>
+          <rect class="cls-10" x="874.33" y="420.79" width="84.56" height="14.54"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

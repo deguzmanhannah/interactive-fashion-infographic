@@ -1,0 +1,1287 @@
+/* CSS RESET */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* stops text selection */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none;
+}
+
+/* stop browser outline from displaying on button clicks */
+*:active {
+    outline: 0;
+}
+
+/* GENERAL STYLES */
+html, body {
+    /* stop page from scrolling */
+    height: 100%;
+    overflow: hidden;
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+div, main, section, img {
+    position: absolute;
+}
+
+main {
+    display: none;
+}
+
+@font-face {
+    font-family: "headerFont";
+    src: url(../fonts/Blastimo.ttf);
+}
+
+#loading, #begin, main {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loading {
+    width: 50px;
+    height: auto;
+}
+
+#btnContainer {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#btnContainer h1  {
+    text-align: center;
+    margin-top: 12%;
+    font-family: headerFont;
+    font-size: 90px;
+    color: #172a5e;
+}
+
+#btnContainer p {
+    text-align: center;
+    color: #172a5e;
+    margin: 0 27%;
+}
+
+#begin {
+    display: inline-block;
+    background: rgb(23,42,94);
+    background: linear-gradient(0deg, rgba(23,42,94,1) 0%, rgba(219,89,83,1) 100%);
+    color: #FFF;
+    border: solid 1px white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: all 0.5s;
+    margin-top: 3%;
+}
+
+#begin:hover {
+    cursor: pointer;
+    background-color: #FFF;
+    color: #000;
+    border: solid 1px #000;
+}
+
+main {
+    width: 960px;
+    height: 600px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#next, #prev, #playPause {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 30px;
+    bottom: 20px;
+    color: #FFF;
+    border-radius: 15px;
+    background: #172a5e;
+    font-size: 16px;
+    transition: background 0.5s;
+    -webkit-box-shadow: 5px 3px 15px -2px rgba(0,0,0,0.41); 
+    box-shadow: 5px 3px 15px -2px rgba(0,0,0,0.41);
+}
+
+#next {
+    right: 20px;
+    padding-left: 2px;
+}
+
+#prev {
+    left: 20px;
+}
+
+#next:hover, #prev:hover, #playPause:hover {
+    cursor: pointer;
+    color: #000;
+    background: #db5953;
+}
+
+#playPause {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.play {
+    width: 12px;
+    height: 16px;
+    border-top: 8px solid transparent;
+    border-left: 12px solid #FFF;
+    border-bottom: 8px solid transparent;
+    margin-left: 2px;
+}
+
+#playPause:hover .play {
+    border-left-color: #000;
+}
+
+.pause {
+    width: 12px;
+    height: 16px;
+    border-right: 4px solid #FFF;
+    border-left: 4px solid #FFF;
+}
+
+#playPause:hover .pause {
+    border-right-color: #000;
+    border-left-color: #000;
+}
+
+/* class can be applied to anything you want a pointer hover on */
+.eleHover:hover {
+    cursor: pointer;
+}
+
+/* SHARED SCREEN STYLES */
+/* for demo only */
+
+h1 {
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "headerFont";
+    font-weight: 400;
+    font-style: normal;
+}
+
+/** for demo only */
+.ele {
+    background: #000;
+    width: 100px;
+    height: 100px;
+}
+
+/*! SCREEN 1 STYLES */
+
+#background1 {
+    background: url(../img/SVG/background1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+    width: 6000px;
+    height: 820px;
+    position: relative;
+    right: 2470px;
+    bottom: 215px;
+}
+
+#model1 {
+    position: relative;
+    bottom: 390px;
+    left: 500px;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 300px;
+}
+
+#sc1header {
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 55px;
+    padding: 0px;
+    width: 400px;
+}
+
+#sc1sub {
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-family: "headerFont";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    padding: 0px;
+    width: 400px;
+}
+
+#smoke {
+    position: absolute;
+    top: -200px;
+    left: 50px;
+    width: 400px;
+}
+
+/*! SCREEN 2 STYLES */
+
+#background2 {
+    background: url(../img/SVG/screen2bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+    width: 3500px;
+    height: 700px;
+    position: relative;
+    right: 1280px;
+    bottom: 10px;
+
+}
+
+#sc2header {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 9%;
+    left: 73%;
+    color: white;
+    font-size: 46px;
+    width: 250px;
+}
+
+#sc2sub {
+    position: absolute;
+    top: 14%;
+    left: 82%;
+    font-size: 10px;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "headerFont";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    padding: 0px;
+    width: 20%;
+
+}
+
+#definition {
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    left: 75%;
+    font-size: 14px;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+#sustainable {
+    color:white;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 64%;
+    font-size: 23px;
+    transform: translate(-50%, -50%);
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#fast {
+    color:white;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 84.5%;
+    font-size: 23px;
+    transform: translate(-50%, -50%);
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#vsImg {
+    position: absolute;
+    top: 45%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+}
+
+#susFact1 {
+    color: white;
+    text-align: right;
+    position: absolute;
+    top: 52%;
+    left: 64.5%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+}
+
+#susFact2 {
+    text-align: right;
+    color: white;
+    position: absolute;
+    top: 66%;
+    left: 64.5%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+}
+
+#susFact3 {
+    text-align: right;
+    color: white;
+    position: absolute;
+    top: 78%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+}
+
+#fastFact1 {
+    color: white;
+    text-align: left;
+    position: absolute;
+    top: 52%;
+    left: 84%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+}
+
+#fastFact2 {
+    color: white;
+    text-align: left;
+    position: absolute;
+    top: 65.5%;
+    left: 84%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+}
+
+#fastFact3 {
+    color: white;
+    text-align: left;
+    position: absolute;
+    top: 78%;
+    left: 84%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+}
+
+.hoverInd {
+    color:black;
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+}
+
+#hover1 {
+    position: absolute;
+    top: 28%;
+    left: 9%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+}
+
+#hover2 {
+    position: absolute;
+    top: 28%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+}
+
+#hover3 {
+    position: absolute;
+    top: 28%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+}
+
+#hover1:hover {
+    color: white;
+}
+
+#hover2:hover {
+    color: white;
+}
+
+#hover3:hover {
+    color: white;
+}
+
+#textileFact {
+    color: black;
+    text-align: left;
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 8%;
+    left: 33%;
+    font-size: 12px;
+    transform: translate(-50%, -50%);
+}
+
+#tshirtTxt {
+    color: black;
+    text-align: center;
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 42%;
+    left: 25%;
+    font-size: 12px;
+    transform: translate(-50%, -50%);
+}
+
+/* map styles */
+
+#mapTxt {
+    color: black;
+    text-align: center;
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 52%;
+    left: 26%;
+    font-size: 12px;
+    transform: translate(-50%, -50%);
+}
+
+#indicator1 {
+    position: absolute;
+    top: 84%;
+    left: 17%;
+    font-size: 12px;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    cursor: pointer;
+}
+
+#indicator1:hover + #stat1 {
+    display: block;
+}
+
+#stat1 {
+   color: black;
+   position: absolute;
+    top: 83%;
+    left: 17%;
+    font-size: 12px;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+
+#indicator2 {
+    position: absolute;
+    top: 71%;
+    left: 12%;
+    font-size: 12px;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    cursor: pointer;
+}
+
+#stat2 {
+    color: black;
+    position: absolute;
+     top: 70%;
+     left: 12%;
+     font-size: 12px;
+     transform: translate(-50%, -50%);
+     display: none;
+ }
+
+ #indicator2:hover + #stat2 {
+    display: block;
+}
+
+#indicator3 {
+    position: absolute;
+    top: 75%;
+    left: 32%;
+    font-size: 12px;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    cursor: pointer;
+}
+
+#stat3 {
+    color: black;
+    position: absolute;
+     top: 74%;
+     left: 32%;
+     font-size: 12px;
+     transform: translate(-50%, -50%);
+     display: none;
+}
+
+#indicator3:hover + #stat3 {
+    display: block;
+}
+
+#indicator4 {
+    position: absolute;
+    top: 73%;
+    left: 36%;
+    font-size: 12px;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    cursor: pointer;
+}
+
+#stat4 {
+    color: black;
+    position: absolute;
+     top: 72%;
+     left: 36%;
+     font-size: 12px;
+     transform: translate(-50%, -50%);
+     display: none;
+}
+
+#indicator4:hover + #stat4 {
+    display: block;
+}
+
+#moneyIcon {
+    position: absolute;
+     top: 92%;
+     left: 60%;
+     font-size: 12px;
+     transform: translate(-50%, -50%);
+     width: 80px;
+     cursor: pointer;
+}
+
+#moneyFact {
+    position: absolute;
+    top: 92%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.moneyTxt {
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+}
+
+#moneyFact h3 {
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #001C5B;
+}
+
+#clickMe {
+    color: black;
+    position: absolute;
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    top: 98%;
+    left: 60%;
+    font-size: 12px;
+    transform: translate(-50%, -50%);
+
+}
+
+#hand {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 57%;
+    width: 3%;
+    top: 95%;
+
+}
+
+
+
+
+/*! SCREEN 3 STYLES */
+#background3 {
+    background: url(../img/SVG/screen3bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+    width: 3500px;
+    height: 700px;
+    position: relative;
+    right: 1280px;
+    bottom: 10px;
+}
+
+#model2 {
+    position: absolute;
+    top: 25%;
+    width: 100px;
+    left: 30%;
+    transform: rotate(-10deg);
+}
+
+#model3 {
+    position: absolute;
+    top: 38%;
+    width: 65px;
+    left: 95%;
+    transform: rotate(-10deg);
+
+}
+
+#model4 {
+    position: absolute;
+    top: 54%;
+    width: 100px;
+    left: 20%;
+    transform: rotate(-5deg);
+}
+
+#screen3 h1 {
+    color: black;
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 20%;
+    left: 70%;
+    font-size: 50px;
+    font-size: 50px;
+    width: 380px;
+}
+
+#screen3 h2 {
+    color: black;
+    font-family: "headerFont";
+    position: absolute;
+    top: 28%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+    width: 300px;
+}
+
+#point1 {
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+    width: 45px;
+    cursor: pointer;
+}
+
+#timeline1 {
+    position: absolute;
+    top: 20%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    font-size: 11px;
+    width: 300px;
+    display: none;
+
+}
+
+#point2 {
+    position: absolute;
+    top: 38%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    width: 45px;
+    cursor: pointer;
+}
+
+#timeline2 {
+    position: absolute;
+    top: 38%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    font-size: 11px;
+    width: 200px;
+    display: none;
+}
+
+#point3 {
+    position: absolute;
+    top: 48%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 45px;
+    cursor: pointer;
+}
+
+#timeline3 {
+    position: absolute;
+    top: 48%;
+    left: 84%;
+    transform: translate(-50%, -50%);
+    font-size: 11px;
+    width: 200px;
+    display: none;
+}
+
+#point4 {
+    position: absolute;
+    top: 88%;
+    left: 68%;
+    transform: translate(-50%, -50%);
+    width: 45px;
+    cursor: pointer;
+}
+
+#timeline4 {
+    position: absolute;
+    top: 89%;
+    left: 79%;
+    transform: translate(-50%, -50%);
+    font-size: 11px;
+    width: 150px;
+    display: none;
+}
+
+#point5 {
+    position: absolute;
+    top: 93%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    width: 45px;
+    cursor: pointer;
+}
+
+#timeline5 {
+    position: absolute;
+    top: 92%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    font-size: 11px;
+    width: 320px;
+    display: none;
+}
+
+/*! SCREEN 4 STYLES */
+#background4 {
+    background: url(../img/SVG/screen4bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+    width: 1200px;
+    height: 900px;
+    position: relative;
+    right: 200px;
+    bottom: 40px;
+}
+
+#screen4 h1 {
+    color: black;
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 18%;
+    left: 25%;
+    font-size: 50px;
+    font-size: 50px;
+    width: 380px;
+}
+
+#screen4 h2 {
+    color: black;
+    font-family: "headerFont";
+    position: absolute;
+    top: 25%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    width: 300px;
+}
+
+#bottleTxt {
+    color: white;
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 28%;
+    left: 87.5%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+    width: 40px;
+    text-align: center;
+}
+
+#arrow {
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 260px;
+}
+
+#garbage {
+    position: absolute;
+    top: 89%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+}
+
+#drop {
+    position: absolute;
+    top: 30%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    width: 50px;
+    cursor: pointer;
+}
+
+#drop2 {
+    position: absolute;
+    top: 45%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.circle {
+    background-color: #001C5B;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 70%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.circle p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+}
+
+#hoverCircle {
+    position: absolute;
+    top: 70%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+#imgDiv {
+    position: absolute;
+    top: 53%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    width: 126px;
+    background-color: white;
+    z-index: 9;
+
+}
+
+#hoverCircle1 {
+    position: absolute;
+    top: 60%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+  #imgDiv1 {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 126px;
+    background-color: white;
+    z-index: 9;
+    width: 118px;
+  }
+
+  #hoverCircle2 {
+    position: absolute;
+    top: 70%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+  #imgDiv2 {
+    position: absolute;
+    top: 60%;
+    left: 72%;
+    transform: translate(-50%, -50%);
+    width: 123px;
+    background-color: white;
+    z-index: 9;
+    width: 118px;
+  }
+
+
+  #hoverCircle3 {
+    position: absolute;
+    top: 60%;
+    left: 88%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+  #imgDiv3 {
+    position: absolute;
+    top: 50%;
+    left: 88%;
+    transform: translate(-50%, -50%);
+    width: 118px;
+    background-color: white;
+    z-index: 9;
+  }
+
+
+#circles {
+    position: relative;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+}
+
+
+#tearTxt {
+    color: white;
+    position: absolute;
+    top: 32%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+#drop:hover + #tearTxt {
+    opacity: 1;     
+  }
+
+
+  #tearTxt2 {
+    color: white;
+    position: absolute;
+    top: 46%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+#drop2:hover + #tearTxt2 {
+    opacity: 1;     
+  }
+
+  #waterFact {
+      color: black;
+      position: absolute;
+      top: 20%;
+      left: 72%;
+      transform: translate(-50%, -50%);
+      font-size: 11px;
+  }
+
+  #waterStat {
+    color: #D64C4C;
+    position: absolute;
+    top: 18%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  #closetTxt {
+    color: black;
+    position: absolute;
+    top: 76%;
+    left: 12%;
+    font-size: 8px;
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  h5 {
+    color: #D64C4C;
+    font-size: 12px;
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 82%;
+    left: 12%;
+  }
+
+  #closetTxt2 {
+    color: black;
+    position: absolute;
+    top: 85%;
+   left: 12%;
+   font-size: 8px;
+  font-family: quasimoda, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+
+
+/* !SCREEN 5 STYLES */
+
+#background5 {
+    background-image: url(../img/SVG/screen5bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+    width: 2000px;
+    height: 660px;
+    position: relative;
+    right: 600px;
+    bottom: 20px;
+}
+
+#spool {
+    position: absolute;
+    top: 60%;
+    left: 8%;
+    width: 130px;
+}
+
+#screen5 h1 {
+    color: black;
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 15%;
+    left: 20%;
+    font-size: 58px;
+   
+}
+
+#screen5 h2 {
+    color: black;
+    font-family: "headerFont";
+    position: absolute;
+    top: 22%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+}
+
+#one {
+    position: absolute;
+    top: 28%;
+    left: 12%;
+    width: 30px;
+    display: block;
+    cursor: pointer;
+}
+
+#solOne {
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 27%;
+    left: 16%;
+    color: black;
+    width: 200px;
+    display: none;
+}
+
+#two {
+    position: absolute;
+    top: 40%;
+    left: 4%;
+    width: 30px;
+    display: block;
+    cursor: pointer;
+}
+
+#solTwo {
+    position: absolute;
+    top: 42%;
+    left: 8%;
+    width: 200px;
+    display: none;
+}
+
+#three {
+    position: absolute;
+    top: 87%;
+    left: 22%;
+    width: 30px;
+    display: block;
+    cursor: pointer;
+}
+
+#solThree {
+    position: absolute;
+    top: 89%;
+    left: 26%;
+    width: 200px;
+    display: none;
+}
+
+#four {
+    position: absolute;
+    top: 15%;
+    left: 58%;
+    width: 30px;
+    display: block;
+    cursor: pointer;
+}
+
+#solFour {
+    position: absolute;
+    top: 16%;
+    left: 62%;
+    width: 200px;
+    display: none;
+}
+
+#five {
+    position: absolute;
+    top: 46%;
+    left: 60%;
+    width: 30px;
+    display: block;
+    cursor: pointer;
+}
+
+#solFive {
+    position: absolute;
+    top: 44%;
+    left: 64%;
+    display: none;
+    width: 180px;
+}
+
+#six {
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    width: 30px;
+    display: block;
+    cursor: pointer;
+}
+
+#solSix {
+    position: absolute;
+    top: 69%;
+    left: 64%;
+    width: 140px;
+    display: none;
+}
+
+#seven {
+    position: absolute;
+    top: 86%;
+    left: 60%;
+    width: 30px;
+    display: block;
+    cursor: pointer;
+}
+
+#solSeven {
+    position: absolute;
+    top: 89%;
+    left: 63%;
+    width: 220px;
+    display: none;
+}
+
+
+/*! SCREEN 6 STYLES */
+#background6{
+    background: url(../img/SVG/screen6.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+    width: 2800px;
+    height: 690px;
+    position: relative;
+    right: 982px;
+    bottom: 10px;
+}
+
+#screen6 h1 {
+    color: black;
+    font-family: quasimoda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 14%;
+    left: 51%;
+    font-size: 58px;
+    width: 400px;
+}
+
+/* !AUDIO SECTION */
+
+#introAudio  {
+     display: none; 
+ 
+}
+
+#screen2Audio {
+    display: none;
+}
+
+#screen3Audio {
+    display: none;
+}
+
+#screen4Audio {
+    display: none;
+}
+
+#screen5Audio {
+    display: none;
+}
